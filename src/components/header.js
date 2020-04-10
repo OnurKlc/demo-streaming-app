@@ -5,31 +5,31 @@ import PaddingLayout from "./padding-layout";
 
 const Outer = styled.div`
 .sub-header {
-color: white;
-font-weight: 600;
-padding: 20px;
-font-size: 20px;
+  color: white;
+  font-weight: 600;
+  padding: 20px 0;
+  font-size: 20px;
 }
 .upper {
-background-color: ${COLORS.primaryBlue};
+  background-color: ${COLORS.primaryBlue};
 }
 .lower {
-background-color: ${COLORS.primaryDark};
+  background-color: ${COLORS.primaryDark};
 }
 .login-button {
-background-color: transparent;
-border: none;
-color: white;
-outline: 0;
-cursor: pointer;
-margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: 0;
+  cursor: pointer;
+  margin-right: 10px;
 }
 .trial-button {
-background-color: ${COLORS.primaryDark};
-border: none;
-color: white;
-padding: 5px 10px;
-cursor: pointer;
+  background-color: ${COLORS.primaryDark};
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
 }
 `;
 

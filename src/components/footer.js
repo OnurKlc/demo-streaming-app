@@ -15,9 +15,28 @@ bottom: 0;
 width: 100%;
 background-color: ${COLORS.primaryDark};
 color: white;
+font-size: 12px;
+.link-container {
+  margin: 30px 0 10px 0;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:after {
+  content: "|";
+  margin: 0 5px;
+}
+.link:last-child:after {
+  content: "";
+}
+.external-links {
+  margin: 30px 0;
+}
 .social-media {
   img {
-    height: 25px;
+    height: 20px;
+    margin-right: 10px;
   }
 }
 .stores {
@@ -31,7 +50,6 @@ color: white;
     border-radius: 8px;
     border: 0.5px solid rgba(255,255,255,0.5);
     &:last-child {
-      border: 0.1px solid rgba(255,255,255,0.5);
       border-radius: 0;
     }
   }
@@ -46,13 +64,13 @@ const Footer = () => {
       <PaddingLayout>
         <div className="link-container">
           {links.map(link => (
-            <a className="link">{link}</a>
+            <a href="#" className="link">{link}</a>
           ))}
         </div>
         <div className="copyright">
           Copyright &copy; 2016 DEMO Streaming. All Rights Reserved.
         </div>
-        <div className="external-links display-flex justify-content-space-between">
+        <div className="external-links display-flex justify-content-space-between align-items-center">
           <div className="social-media display-flex">
             <img src={FacebookSvg} alt="Facebook Logo"/>
             <img src={TwitterSvg} alt="Twitter Logo"/>
