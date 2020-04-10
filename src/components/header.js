@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {useLocation, useHistory} from "react-router-dom";
 import {COLORS} from "../assets/constants";
 import PaddingLayout from "./padding-layout";
 
@@ -33,13 +34,17 @@ const Outer = styled.div`
 }
 `;
 
-const Header = (props) => {
+const Header = () => {
+  const location = useLocation();
+  const currentPath = location.pathname.substring(1);
+  const history = useHistory()
+
   return (
     <Outer>
       <div className="sub-header upper">
         <PaddingLayout>
           <div className="display-flex justify-content-space-between">
-          <div>DEMO Streaming</div>
+            <div onClick={() => history.push("/")} style={{cursor: "pointer"}}>DEMO Streaming</div>
             <div>
               <button className="login-button">Log in</button>
               <button className="trial-button">Start your free trial</button>
@@ -49,7 +54,7 @@ const Header = (props) => {
       </div>
       <div className="sub-header lower">
         <PaddingLayout>
-          <div>{props.title}</div>
+          <div>{currentPath === "series" ? "Popular Series" : currentPath === "movies" ? "Popular Movies" : "Popular Titles"}</div>
         </PaddingLayout>
       </div>
     </Outer>

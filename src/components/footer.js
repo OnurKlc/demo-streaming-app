@@ -64,7 +64,7 @@ const Footer = () => {
       <PaddingLayout>
         <div className="link-container">
           {links.map(link => (
-            <a href="#" className="link">{link}</a>
+            <a href="#" className="link" key={Math.random()}>{link}</a>
           ))}
         </div>
         <div className="copyright">
