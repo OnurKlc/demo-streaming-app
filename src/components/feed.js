@@ -10,11 +10,11 @@ const Outer = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     justify-items: center;
-    margin-top: 50px;
+    margin: 50px 0;
   }
 `;
 
-const Feed = (props) => {
+const Feed = () => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const location = useLocation();

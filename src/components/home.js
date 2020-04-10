@@ -4,7 +4,7 @@ import CardItem from "./card-item";
 import {Link} from "react-router-dom";
 
 
-const Boilerplate = () => {
+const Home = () => {
   return (
     <>
       <PaddingLayout>
@@ -19,4 +19,4 @@ const Boilerplate = () => {
   )
 };
 
-export default Boilerplate;
+export default Home;

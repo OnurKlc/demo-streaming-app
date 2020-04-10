@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="249335b4-33fa-4ff4-aa30-5af70af94b7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/movie-item.js" afterDir="false" />
+    <list default="true" id="249335b4-33fa-4ff4-aa30-5af70af94b7f" name="Default Changelist" comment="responsive design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/series.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/padding-layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/padding-layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586508530427</updated>
       <workItem from="1586508532197" duration="2298000" />
-      <workItem from="1586510851452" duration="19747000" />
+      <workItem from="1586510851452" duration="24068000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1586519486131</created>
@@ -101,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586529224388</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="service connection and subpages">
+      <created>1586534193738</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586534193738</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,13 +115,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="card items and homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="card items and homepage" />
+    <MESSAGE value="service connection and subpages" />
+    <MESSAGE value="responsive design" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive design" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2566" y="118" key="CommitChangelistDialog2" timestamp="1586529223516">
+    <state x="2566" y="118" key="CommitChangelistDialog2" timestamp="1586543282673">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2566" y="118" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586529223516" />
+    <state x="2566" y="118" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586543282673" />
     <state x="2720" y="278" key="FileChooserDialogImpl" timestamp="1586525766181">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

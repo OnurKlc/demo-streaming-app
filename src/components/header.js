@@ -23,13 +23,14 @@ const Outer = styled.div`
   color: white;
   outline: 0;
   cursor: pointer;
-  margin-right: 10px;
+  margin-left: 20px;
+  padding: 10px;
 }
 .trial-button {
   background-color: ${COLORS.primaryDark};
   border: none;
   color: white;
-  padding: 10px 10px;
+  padding: 10px;
   cursor: pointer;
 }
 `;
@@ -37,15 +38,15 @@ const Outer = styled.div`
 const Header = () => {
   const location = useLocation();
   const currentPath = location.pathname.substring(1);
-  const history = useHistory()
+  const history = useHistory();
 
   return (
     <Outer>
       <div className="sub-header upper">
         <PaddingLayout>
-          <div className="display-flex justify-content-space-between">
+          <div className="display-flex justify-content-space-between align-items-center">
             <div onClick={() => history.push("/")} style={{cursor: "pointer"}}>DEMO Streaming</div>
-            <div>
+            <div className="display-flex flex-wrap-wrap justify-content-flex-end">
               <button className="login-button">Log in</button>
               <button className="trial-button">Start your free trial</button>
             </div>

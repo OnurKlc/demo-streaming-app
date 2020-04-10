@@ -4,6 +4,9 @@ import styled from "styled-components";
 const Outer = styled.div`
 display: inline-block;
 margin-right: 20px;
+@media (max-width: 375px) {
+  margin: 0 7px;
+}
 .icon-container {
 background-color: #1e1e1e;
 position: relative;
@@ -79,10 +82,10 @@ const Boilerplate = (props) => {
       <div className="icon-container">
         <div className="icon">
           <div className="cutter-container">
-            <span className="cutter first"></span>
-            <span className="cutter second"></span>
-            <span className="cutter third"></span>
-            <span className="cutter fourth"></span>
+            <span className="cutter first"/>
+            <span className="cutter second"/>
+            <span className="cutter third"/>
+            <span className="cutter fourth"/>
           </div>
         </div>
         <div className="title">

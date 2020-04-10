@@ -10,14 +10,13 @@ import PlayStoreSvg from "../assets/store/play-store.svg";
 import WindowsStoreSvg from "../assets/store/windows-store.svg";
 
 const Outer = styled.div`
-position: absolute;
-bottom: 0;
+margin-top: auto;
 width: 100%;
 background-color: ${COLORS.primaryDark};
 color: white;
 font-size: 12px;
 .link-container {
-  margin: 30px 0 10px 0;
+  padding: 30px 0 10px 0;
 }
 .link {
   color: white;
@@ -31,19 +30,25 @@ font-size: 12px;
   content: "";
 }
 .external-links {
-  margin: 30px 0;
+  flex-wrap: wrap;
+  padding: 30px 0;
 }
 .social-media {
+  margin: 10px 0;
   img {
     height: 20px;
     margin-right: 10px;
   }
+  @media(max-width: 414px) {
+    width: 100%;
+  }
 }
 .stores {
+  flex-wrap: wrap;
   div {
+    margin: 10px 5px 0 5px;
     width: 110px;
     height: 35px;
-    margin-left: 5px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,6 +56,11 @@ font-size: 12px;
     border: 0.5px solid rgba(255,255,255,0.5);
     &:last-child {
       border-radius: 0;
+      margin-left: 0;
+    }
+    &:first-child {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -71,12 +81,12 @@ const Footer = () => {
           Copyright &copy; 2016 DEMO Streaming. All Rights Reserved.
         </div>
         <div className="external-links display-flex justify-content-space-between align-items-center">
-          <div className="social-media display-flex">
+          <div className="social-media display-flex justify-content-center">
             <img src={FacebookSvg} alt="Facebook Logo"/>
             <img src={TwitterSvg} alt="Twitter Logo"/>
             <img src={InstagramSvg} alt="Instagram Logo"/>
           </div>
-          <div className="stores display-flex">
+          <div className="stores display-flex justify-content-center">
             <div style={{backgroundImage: `url(${AppStoreSvg})`}}/>
             <div style={{backgroundImage: `url(${PlayStoreSvg})`}}/>
             <div style={{backgroundImage: `url(${WindowsStoreSvg})`}}/>
