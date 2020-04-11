@@ -12,6 +12,8 @@ Bearing in mind that it is best to keep the amount of http request at minimum I 
 
 Since this is a small app, I didn't separated components into subcategories and kept them in a single components folder.
 
+With "npm run build" script, the project can be built into dist folder with an entry point file of 'index.html'.
+
 ### `- Any possible improvement to this submission`
 
 It is possible to provide a better user experience with fancy loading spinners or error handling popups.
