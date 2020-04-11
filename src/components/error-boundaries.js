@@ -1,20 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import PaddingLayout from "./padding-layout";
+import {withRouter} from "react-router-dom";
 
 
 const Outer = styled.div`
-.outer {
-position: absolute;
-left: 50%;
-top: 40%;
-transform: translateX(-50%);
-color: #f7f1e3;
-.error-text {
-margin-top: 10px;
-padding: 0;
-text-align: center;
-}
-}
+  margin-top: 50px;
+
 `;
 
 class ErrorBoundaries extends React.Component {
@@ -25,17 +17,23 @@ class ErrorBoundaries extends React.Component {
     }
   }
 
-  static getDerivedStateFromError(error) {
-    return {error: true};
+  componentDidMount() {
+    this.props.history.listen(() => {
+      this.setState({error: false})
+    })
+  }
+
+  componentDidCatch(error, errorInfo) {
+    this.setState({error: true})
   }
 
   render() {
     if (this.state.error) {
       return (
         <Outer>
-          <div className="outer">
-            <h1 className="error-text">Oops, something went wrong!</h1>
-          </div>
+          <PaddingLayout>
+            Oops, something went wrong!
+          </PaddingLayout>
         </Outer>
       );
     }
@@ -43,4 +41,4 @@ class ErrorBoundaries extends React.Component {
   }
 }
 
-export default ErrorBoundaries;
+export default withRouter(ErrorBoundaries);

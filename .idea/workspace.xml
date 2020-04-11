@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="249335b4-33fa-4ff4-aa30-5af70af94b7f" name="Default Changelist" comment="responsive design">
+    <list default="true" id="249335b4-33fa-4ff4-aa30-5af70af94b7f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/boilerplate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/error-boundaries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-boundaries.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movie-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/padding-layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/padding-layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,9 @@
       <option name="presentableId" value="Default" />
       <updated>1586508530427</updated>
       <workItem from="1586508532197" duration="2298000" />
-      <workItem from="1586510851452" duration="24068000" />
+      <workItem from="1586510851452" duration="24418000" />
+      <workItem from="1586543711564" duration="5723000" />
+      <workItem from="1586599328865" duration="6142000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1586519486131</created>
@@ -106,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586534193738</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="responsive design">
+      <created>1586543363980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586543363980</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,10 +125,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="responsive design" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2566" y="118" key="CommitChangelistDialog2" timestamp="1586543282673">
+    <state x="2566" y="118" key="CommitChangelistDialog2" timestamp="1586543363167">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2566" y="118" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586543282673" />
+    <state x="2566" y="118" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586543363167" />
     <state x="2720" y="278" key="FileChooserDialogImpl" timestamp="1586525766181">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -132,9 +137,9 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586510837190" />
-    <state x="2637" y="255" width="606" height="536" key="find.popup" timestamp="1586533191940">
+    <state x="2637" y="255" width="606" height="536" key="find.popup" timestamp="1586604743943">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2637" y="255" width="606" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586533191940" />
+    <state x="2637" y="255" width="606" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586604743943" />
   </component>
 </project>

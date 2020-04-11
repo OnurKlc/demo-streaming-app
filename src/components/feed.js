@@ -17,8 +17,10 @@ const Outer = styled.div`
 const Feed = () => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
+  const [error, setError] = useState();
   const location = useLocation();
   const currentPath = location.pathname.substring(1);
+
 
   useEffect(() => {
     axios({
@@ -27,21 +29,39 @@ const Feed = () => {
     }).then(response => {
       dataHandler(response.data.entries);
       setLoading(false);
+    }).catch(error => {
+      setLoading(false);
+      setData(() => {
+        throw new Error(error);
+      })
     });
+
+    return () => {
+      setError(false);
+    }
   }, []);
 
   const dataHandler = (programs) => {
-    if (currentPath === "series") {
-      let seriesCopy = [...programs];
-      seriesCopy = seriesCopy.filter(item => item.programType === "series");
-      seriesCopy.splice(21);
-      setData(seriesCopy);
-    } else if (currentPath === "movies") {
-      let movieCopy = [...programs];
-      movieCopy = movieCopy.filter(item => item.programType === "movie");
-      movieCopy.splice(21);
-      setData(movieCopy);
-    }
+    let programsCopy = [...programs];
+    programsCopy = programsCopy.filter(item => (item['programType'] === currentPath && Number(item['releaseYear']) > 2009));
+    programsCopy.splice(21);
+    let mapped = programsCopy.map((el, i) => {
+      return {index: i, value: el.title.toLowerCase()};
+    });
+
+    mapped.sort((a, b) => {
+      if (a.value > b.value) {
+        return 1;
+      }
+      if (a.value < b.value) {
+        return -1;
+      }
+      return 0;
+    });
+
+    let result = mapped.map(el => programsCopy[el.index]);
+
+    setData(result);
   };
 
   return (

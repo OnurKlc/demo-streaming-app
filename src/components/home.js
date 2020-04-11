@@ -11,7 +11,7 @@ const Home = () => {
         <Link to={"/series"}>
           <CardItem title="SERIES" text="Popular Series"/>
         </Link>
-        <Link to={"/movies"}>
+        <Link to={"/movie"}>
           <CardItem title="MOVIES" text="Popular Movies"/>
         </Link>
       </PaddingLayout>

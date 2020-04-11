@@ -8,21 +8,23 @@ import Feed from "./components/feed";
 import ErrorBoundaries from "./components/error-boundaries";
 
 function App() {
+
+
   return (
-    <div className="App display-flex">
-      <BrowserRouter>
-        <Header title="Popular Titles"/>
+    <BrowserRouter>
+      <div className="App display-flex">
+        <Header/>
         <ErrorBoundaries>
           <Switch>
             <Route path="/" exact component={Home}/>
             <Route path="/series" exact component={Feed}/>
-            <Route path="/movies" exact component={Feed}/>
+            <Route path="/movie" exact component={Feed}/>
             <Route component={ErrorBoundaries}/>
           </Switch>
         </ErrorBoundaries>
-      </BrowserRouter>
-      <Footer/>
-    </div>
+        <Footer/>
+      </div>
+    </BrowserRouter>
   );
 }
 
