@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="249335b4-33fa-4ff4-aa30-5af70af94b7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
       <workItem from="1586508532197" duration="2298000" />
       <workItem from="1586510851452" duration="24418000" />
       <workItem from="1586543711564" duration="5723000" />
-      <workItem from="1586599328865" duration="7967000" />
+      <workItem from="1586599328865" duration="10843000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1586519486131</created>
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586605777467</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="build directory change">
+      <created>1586608198892</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586608198892</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,13 +134,15 @@
     <MESSAGE value="service connection and subpages" />
     <MESSAGE value="responsive design" />
     <MESSAGE value="errorboundary bugfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="errorboundary bugfix" />
+    <MESSAGE value="build directory change" />
+    <option name="LAST_COMMIT_MESSAGE" value="build directory change" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2566" y="118" key="CommitChangelistDialog2" timestamp="1586605776434">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="646" y="118" key="CommitChangelistDialog2" timestamp="1586611702639">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2566" y="118" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586605776434" />
+    <state x="646" y="118" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586611702639" />
+    <state x="2566" y="118" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586608198004" />
     <state x="2720" y="278" key="FileChooserDialogImpl" timestamp="1586525766181">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

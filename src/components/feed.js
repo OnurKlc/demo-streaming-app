@@ -17,7 +17,6 @@ const Outer = styled.div`
 const Feed = () => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
-  const [error, setError] = useState();
   const location = useLocation();
   const currentPath = location.pathname.substring(1);
 
@@ -35,10 +34,6 @@ const Feed = () => {
         throw new Error(error);
       })
     });
-
-    return () => {
-      setError(false);
-    }
   }, []);
 
   const dataHandler = (programs) => {
