@@ -1,32 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Info
-
-### `- Decision on the technical and architectural choices`
-
-I designed the app with three pages. One is homepage and two other are for series and movies.
-
-Series screen and movies screen share the same Feed component because their structures are identical and only data changes.
-
-Bearing in mind that it is best to keep the amount of http request at minimum I registered service workers with offline first principle.
-
-Since this is a small app, I didn't separated components into subcategories and kept them in a single components folder.
-
-With "npm run build" script, the project can be built into dist folder with an entry point file of 'index.html'.
-
-### `- Any possible improvement to this submission`
-
-It is possible to provide a better user experience with fancy loading spinners or error handling popups.
-With some extra dependencies it is possible to improve the app in this direction easily and rapidly.
-
-However, I tried to stick to mockups that are shared by you. For example, I created
-clapper icons in the homepage with pure css rather than using a similar one from some icon library.
-
-Also, on the readme file that you share, I am asked to answer what would I do differently if I were allocated more time.
-I guess I did what I planned and can't think about how time restricts me. Of course, with different 
-preferences there is no limit to do something differently, but I completed all requirements of my available preferences.
-
-
 ## Available Scripts
 
 In the project directory, you can run:
